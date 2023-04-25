@@ -1,0 +1,15 @@
+[
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/v1/opamp"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/x-protobuf"
+      },
+      "bodyFile": "responses/server_to_agent_response.json"
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "layerType": "SOLUTION",
+  "id": "dev_mock_solution_agent",
+  "layerId": "test_mock_solution",
+  "data": {
+    "name": "dev_mock_solution_agent",
+    "displayName": "Test Mock Agent Descriptor",
+    "fmmEntityType": "test_mock_solution@1:test_mock_agent",
+    "deployDefinitions": {
+      "k8s": "test_mock_agent_k8s_platform"
+    }
+  },
+  "objectMimeType": "application/json",
+  "targetObjectId": null,
+  "patch": null,
+  "objectVersion": 1,
+  "createdAt": "2023-04-12T19:42:06.868Z",
+  "updatedAt": "2023-04-12T19:42:06.868Z",
+  "objectType": "agent:descriptor"
+}

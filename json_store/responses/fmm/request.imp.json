@@ -1,0 +1,16 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/fmm:entity/agent@1:orchestration_client"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  }
+]

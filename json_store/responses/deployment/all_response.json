@@ -1,0 +1,53 @@
+{
+  "total": 2,
+  "items": [
+    {
+      "layerType": "SOLUTION",
+      "id": "mock_2_solution_agent_k8s_platform",
+      "layerId": "mock_2_solution",
+      "data": {
+        "helm": {
+          "repoUrl": "https://phanidevavarapu.github.io/client-test-helm/client-test-helm",
+          "version": "0.1.0",
+          "repoName": "client-test-helm",
+          "chartName": "client-test-helm"
+        },
+        "name": "mock_2_solution_agent_k8s_platform",
+        "config": "mock_2_solution:mock2AgentHelmVars",
+        "displayName": "Test Mock Agent k8s Platform Deployment Definition",
+        "orchestratorType": "helm"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 3,
+      "createdAt": "2023-04-14T17:29:21.800Z",
+      "updatedAt": "2023-04-14T18:41:16.544Z",
+      "objectType": "agent:deploymentDefinition"
+    },
+    {
+      "layerType": "SOLUTION",
+      "id": "test_mock_agent_k8s_platform",
+      "layerId": "test_mock_solution",
+      "data": {
+        "helm": {
+          "repoUrl": "https://github.com/phanidevavarapu/client-test-helm/blob/main/client-test-helm",
+          "version": "0.1.0",
+          "repoName": "client-test-helm",
+          "chartName": "client-test-helm"
+        },
+        "name": "test_mock_agent_k8s_platform",
+        "config": "test_mock_solution:testMockAgentK8sHelmVars",
+        "displayName": "Test Mock Agent k8s Platform Deployment Definition",
+        "orchestratorType": "helm"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 1,
+      "createdAt": "2023-04-12T19:42:06.863Z",
+      "updatedAt": "2023-04-12T19:42:06.863Z",
+      "objectType": "agent:deploymentDefinition"
+    }
+  ]
+}

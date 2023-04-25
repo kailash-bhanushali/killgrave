@@ -1,0 +1,12 @@
+{
+  "layerType": "SOLUTION",
+  "id": "agent@1:orchestration_client",
+  "layerId": "agent",
+  "data": "DATA",
+  "objectMimeType": "application/json",
+  "targetObjectId": null,
+  "patch": null,
+  "createdAt": "2023-04-12T02:35:24.977Z",
+  "updatedAt": "2023-04-12T02:35:24.977Z",
+  "objectType": "fmm:entity"
+}

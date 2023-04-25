@@ -1,0 +1,77 @@
+{
+  "total": 3,
+  "items": [
+    {
+      "layerType": "TENANT",
+      "id": "web_server_k8s_solution_multiple",
+      "layerId": "c70bab99-1c66-447d-8aa3-be4e405d0546",
+      "data": {
+        "name": "web_server_k8s_solution_multiple",
+        "agents": {
+          "mockagent_1": {
+            "descriptor": "dev_mock_solution_agent",
+            "deployConfig": "dev_mock_solution_default"
+          },
+          "mockagent_2": {
+            "descriptor": "dev_mock_solution_agent",
+            "deployConfig": "mock_2_solution_1"
+          },
+          "mockagent_3": {
+            "descriptor": "dev_mock_solution_agent",
+            "deployConfig": "mock_2_solution_2"
+          }
+        },
+        "platform": "k8s",
+        "displayName": "Solution default orchestration client config for Test Mock Agent in k8s"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 9,
+      "createdAt": "2023-04-18T06:07:52.523Z",
+      "updatedAt": "2023-04-18T21:02:34.481Z",
+      "objectType": "dev_agent:orchestrationClientConfig"
+    },
+    {
+      "layerType": "SOLUTION",
+      "id": "dev_mock_solution_agent_k8s_solution_default",
+      "layerId": "dev_mock_solution",
+      "data": {
+        "name": "dev_mock_solution_agent_k8s_solution_default",
+        "agents": {
+          "mockagent_1": {
+            "descriptor": "dev_mock_solution_agent",
+            "deployConfig": "dev_mock_solution_default"
+          }
+        },
+        "platform": "k8s",
+        "displayName": "Solution default orchestration client config for Test Mock Agent in k8s"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 1,
+      "createdAt": "2023-04-18T16:58:07.184Z",
+      "updatedAt": "2023-04-18T16:58:07.184Z",
+      "objectType": "dev_agent:orchestrationClientConfig"
+    },
+    {
+      "layerType": "TENANT",
+      "id": "web_server_k8s_empty_multiple",
+      "layerId": "c70bab99-1c66-447d-8aa3-be4e405d0546",
+      "data": {
+        "name": "web_server_k8s_empty_multiple",
+        "agents": {},
+        "platform": "k8s",
+        "displayName": "Solution default orchestration client config for Test Mock Agent in k8s"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 1,
+      "createdAt": "2023-04-18T20:44:48.703Z",
+      "updatedAt": "2023-04-18T20:44:48.703Z",
+      "objectType": "dev_agent:orchestrationClientConfig"
+    }
+  ]
+}

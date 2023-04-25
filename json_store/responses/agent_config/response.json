@@ -1,0 +1,31 @@
+{
+  "layerType": "TENANT",
+  "id": "agent_config_multiple",
+  "layerId": "c70bab99-1c66-447d-8aa3-be4e405d0546",
+  "data": {
+    "name": "agent_config_multiple",
+    "scope": "[attributes(k8s.cluster.name) = 'mock1']",
+    "priority": 0,
+    "telemetry": {
+      "logs": {
+        "is_enabled": true
+      },
+      "traces": {
+        "is_enabled": true
+      },
+      "metrics": {
+        "is_enabled": true
+      }
+    },
+    "descriptor": "orchestration_client",
+    "displayName": "Orchestration client configuration multiple",
+    "configuration": "web_server_k8s_solution_multiple"
+  },
+  "objectMimeType": "application/json",
+  "targetObjectId": null,
+  "patch": null,
+  "objectVersion": 1,
+  "createdAt": "2023-04-18T06:09:24.753Z",
+  "updatedAt": "2023-04-18T06:09:24.753Z",
+  "objectType": "dev_agent:config"
+}

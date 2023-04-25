@@ -59,11 +59,12 @@ type Request struct {
 
 // Response represent the structure of real response
 type Response struct {
-	Status   int                `json:"status"`
-	Body     string             `json:"body"`
-	BodyFile *string            `json:"bodyFile" yaml:"bodyFile"`
-	Headers  *map[string]string `json:"headers"`
-	Delay    ResponseDelay      `json:"delay" yaml:"delay"`
+	Status           int                `json:"status"`
+	Body             string             `json:"body"`
+	BodyFile         *string            `json:"bodyFile" yaml:"bodyFile"`
+	BodyTemplateFile *string            `json:"bodyTemplateFile" yaml:"bodyTemplateFile"`
+	Headers          *map[string]string `json:"headers"`
+	Delay            ResponseDelay      `json:"delay" yaml:"delay"`
 }
 
 func findImposters(impostersDirectory string, imposterConfigCh chan ImposterConfig) error {

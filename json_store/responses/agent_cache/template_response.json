@@ -1,0 +1,13 @@
+{
+  "layerType": "TENANT",
+  "id": "01GW9RZFC071H3GCK571GP6BB2",
+  "layerId": "c70bab99-1c66-447d-8aa3-be4e405d0546",
+  "data": "DATA",
+  "objectMimeType": "application/json",
+  "targetObjectId": null,
+  "patch": null,
+  "objectVersion": 1,
+  "createdAt": "2023-04-14T19:07:06.412Z",
+  "updatedAt": "2023-04-14T19:07:06.412Z",
+  "objectType": "agent:agentCache"
+}

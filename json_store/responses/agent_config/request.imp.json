@@ -1,0 +1,29 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:config"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "all_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:config/{_id}"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  }
+]

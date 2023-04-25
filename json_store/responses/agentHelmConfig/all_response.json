@@ -1,0 +1,80 @@
+{
+  "total": 3,
+  "items": [
+    {
+      "layerType": "SOLUTION",
+      "id": "mock_2_solution_default",
+      "layerId": "mock_2_solution",
+      "data": {
+        "name": "mock_2_solution_default",
+        "image": {
+          "tag": "22.4.0-112",
+          "repository": "494198612820.dkr.ecr.us-west-2.amazonaws.com/cosmosx/agent-config-client"
+        },
+        "service": {
+          "name": "mock_agent",
+          "namespace": "mock_2_solution"
+        },
+        "namespace": "default",
+        "displayName": "Solution default configuration"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 1,
+      "createdAt": "2023-04-18T16:58:07.111Z",
+      "updatedAt": "2023-04-18T16:58:07.111Z",
+      "objectType": "mock_2_solution:mock2AgentHelmVars"
+    },
+    {
+      "layerType": "TENANT",
+      "id": "mock_2_solution_1",
+      "layerId": "c70bab99-1c66-447d-8aa3-be4e405d0546",
+      "data": {
+        "name": "mock_2_solution_1",
+        "image": {
+          "tag": "22.4.0-112",
+          "repository": "494198612820.dkr.ecr.us-west-2.amazonaws.com/cosmosx/agent-config-client"
+        },
+        "service": {
+          "name": "mock_agent",
+          "namespace": "mock_2_solution"
+        },
+        "namespace": "mock2",
+        "displayName": "Solution default configuration"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 1,
+      "createdAt": "2023-04-18T20:58:39.182Z",
+      "updatedAt": "2023-04-18T20:58:39.182Z",
+      "objectType": "mock_2_solution:mock2AgentHelmVars"
+    },
+    {
+      "layerType": "TENANT",
+      "id": "mock_2_solution_2",
+      "layerId": "c70bab99-1c66-447d-8aa3-be4e405d0546",
+      "data": {
+        "name": "mock_2_solution_2",
+        "image": {
+          "tag": "22.4.0-112",
+          "repository": "494198612820.dkr.ecr.us-west-2.amazonaws.com/cosmosx/agent-config-client"
+        },
+        "service": {
+          "name": "mock_agent",
+          "namespace": "mock_2_solution"
+        },
+        "namespace": "mock2",
+        "displayName": "Solution default configuration"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 1,
+      "createdAt": "2023-04-18T20:58:47.707Z",
+      "updatedAt": "2023-04-18T20:58:47.707Z",
+      "objectType": "mock_2_solution:mock2AgentHelmVars"
+    }
+  ]
+}

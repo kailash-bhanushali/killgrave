@@ -1,0 +1,25 @@
+{
+  "layerType": "SOLUTION",
+  "id": "mock_2_solution_1",
+  "layerId": "mock_2_solution",
+  "data": {
+    "name": "mock_2_solution_1",
+    "image": {
+      "tag": "22.4.0-112",
+      "repository": "494198612820.dkr.ecr.us-west-2.amazonaws.com/cosmosx/agent-config-client"
+    },
+    "service": {
+      "name": "mock_agent",
+      "namespace": "mock_2_solution"
+    },
+    "namespace": "default",
+    "displayName": "Solution default configuration"
+  },
+  "objectMimeType": "application/json",
+  "targetObjectId": null,
+  "patch": null,
+  "objectVersion": 1,
+  "createdAt": "2023-04-18T16:58:07.111Z",
+  "updatedAt": "2023-04-18T16:58:07.111Z",
+  "objectType": "mock_2_solution:mock2AgentHelmVars"
+}

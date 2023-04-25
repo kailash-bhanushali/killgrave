@@ -1,0 +1,14 @@
+{
+  "layerType": "SOLUTION",
+  "id": "orchestration_client",
+  "layerId": "agent",
+  "data": "DATA",
+  "objectMimeType": "application/json",
+  "targetObjectId": null,
+  "patch": null,
+  "createdAt": "2023-03-04T06:27:21.314Z",
+  "updatedAt": "2023-03-04T06:27:21.314Z",
+  "layertype": 100,
+  "layerid": "agent",
+  "objectType": "agent:descriptor"
+}

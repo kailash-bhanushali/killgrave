@@ -1,0 +1,142 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:dataCache/agent_config_multiple-mockagent_1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_1.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:dataCache/agent_config_multiple-mockagent_2"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_2.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:dataCache/agent_config_multiple-mockagent_3"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_3.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:dataCache/{_id}"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:dataCache"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "all_response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/v1beta/objects/agent:dataCache"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "PUT",
+      "endpoint": "/v1beta/objects/agent:dataCache/agent_config_multiple-mockagent_1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_1.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "PUT",
+      "endpoint": "/v1beta/objects/agent:dataCache/agent_config_multiple-mockagent_2"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_2.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "PUT",
+      "endpoint": "/v1beta/objects/agent:dataCache/agent_config_multiple-mockagent_3"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_3.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "PUT",
+      "endpoint": "/v1beta/objects/agent:dataCache/{_id}"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:deploymentDefinition"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "all_response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:deploymentDefinition/{_id}"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  }
+]

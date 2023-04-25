@@ -1,0 +1,31 @@
+{
+  "total": 1,
+  "items": [
+    {
+      "layerType": "TENANT",
+      "id": "01GY9GN13MVJM0MA6CKZKE6P0N",
+      "layerId": "c70bab99-1c66-447d-8aa3-be4e405d0546",
+      "data": {
+        "agent": {
+          "id": "01GY9GN13MVJM0MA6CKZKE6P0N",
+          "name": "orchestration_client",
+          "namespace": "dev_agent"
+        },
+        "config": {
+          "current": {
+            "priority": 3,
+            "agentConfigId": "agent_config_multiple"
+          }
+        },
+        "displayName": "Cache for Agent"
+      },
+      "objectMimeType": "application/json",
+      "targetObjectId": null,
+      "patch": null,
+      "objectVersion": 52,
+      "createdAt": "2023-04-18T06:47:40.664Z",
+      "updatedAt": "2023-04-19T18:51:10.044Z",
+      "objectType": "dev_agent:agentCache"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "layerType": "SOLUTION",
+  "id": "agent_solution_agent_k8s_solution_default",
+  "layerId": "agent",
+  "data": "DATA",
+  "objectMimeType": "application/json",
+  "targetObjectId": null,
+  "patch": null,
+  "objectVersion": 1,
+  "createdAt": "2023-04-18T22:00:10.214Z",
+  "updatedAt": "2023-04-18T22:00:10.214Z",
+  "objectType": "agent:config"
+}

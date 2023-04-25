@@ -1,0 +1,71 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:descriptor/orchestration_client"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_client.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:descriptor/dev_mock_solution_agent"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_mock.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:descriptor/mock_2_solution_agent"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_mock2.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:descriptor/{_id}"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/agent:descriptor"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "all_response.json"
+    }
+  }
+]

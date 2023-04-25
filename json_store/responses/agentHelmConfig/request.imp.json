@@ -1,0 +1,72 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/mock_2_solution:mock2AgentHelmVars"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "all_response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/mock_2_solution:mock2AgentHelmVars/mock_2_solution_1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_1.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/mock_2_solution:mock2AgentHelmVars/mock_2_solution_2"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_2.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/mock_2_solution:mock2AgentHelmVars/mock_2_solution_3"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response_3.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/v1beta/objects/mock_2_solution:mock2AgentHelmVars/{_id}"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "response.json",
+      "bodyTemplateFile": "template_response.json"
+    }
+  }
+]

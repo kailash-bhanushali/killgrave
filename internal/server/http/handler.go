@@ -1,10 +1,13 @@
 package http
 
 import (
+	"io"
+	"io/fs"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 )
 
@@ -14,10 +17,38 @@ func ImposterHandler(imposter Imposter) http.HandlerFunc {
 		if imposter.Delay() > 0 {
 			time.Sleep(imposter.Delay())
 		}
+		if r.Method == http.MethodPost || r.Method == http.MethodPut {
+			updateResponseTemplate(r, imposter)
+		}
 		writeHeaders(imposter, w)
 		w.WriteHeader(imposter.Response.Status)
 		writeBody(imposter, w)
 	}
+}
+
+func updateResponseTemplate(r *http.Request, imposter Imposter) {
+	if imposter.Response.BodyTemplateFile != nil {
+		bodyTemplateFile := imposter.CalculateFilePath(*imposter.Response.BodyTemplateFile)
+		if _, err := os.Stat(bodyTemplateFile); os.IsNotExist(err) {
+			log.Printf("the body template file %s not found\n", bodyTemplateFile)
+			return
+		}
+		bodyFile := imposter.CalculateFilePath(*imposter.Response.BodyFile)
+		if _, err := os.Stat(bodyFile); os.IsNotExist(err) {
+			log.Printf("the body file %s not found\n", bodyFile)
+			return
+		}
+		requestBody, _ := io.ReadAll(r.Body)
+
+		templateBody := fetchBodyFromFile(bodyTemplateFile)
+
+		updatedBody := strings.Replace(string(templateBody), "\"data\": \"DATA\"", "\"data\": "+string(requestBody), 1)
+		err := ioutil.WriteFile(bodyFile, []byte(updatedBody), fs.ModePerm)
+		if err != nil {
+			log.Printf("Error updating the response for  the file %s: %v\n", bodyFile, err)
+		}
+	}
+	return
 }
 
 func writeHeaders(imposter Imposter, w http.ResponseWriter) {
