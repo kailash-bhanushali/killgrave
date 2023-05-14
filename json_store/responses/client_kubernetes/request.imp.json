@@ -1,0 +1,470 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/api"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/api/v1/namespaces"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_namespaces.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/api/v1/secrets"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_secrets.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/api/v1/namespaces/{namespace}/secrets"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_secrets.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/api/v1/namespaces/{namespace}/serviceaccounts"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_serviceaccounts.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/scheduling.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_scheduling.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/apiextensions.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_apiextensions.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/node.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_node.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/coordination.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_coordination.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/admissionregistration.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_admissionregistration.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/autoscaling/v2"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_autoscaling_v2.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/discovery.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_discovery.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/events.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_events.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/authentication.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_authentication.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/storage.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_storage.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/apiregistration.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_apiregistration.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/autoscaling/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_autoscaling_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/batch/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_batch_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/policy/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_policy_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/flowcontrol.apiserver.k8s.io/v1beta3"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_flowcontrol.apiserver.k8s.io_v1beta3.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/flowcontrol.apiserver.k8s.io/v1beta2"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_flowcontrol.apiserver.k8s.io_v1beta2.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/rbac.authorization.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_rbac.authorization.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/certificates.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_certificates.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/storage.k8s.io/v1beta1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_storage.k8s.io_v1beta1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/authorization.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_authorization.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/networking.k8s.io/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_networking.k8s.io_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/apis/apps/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_apps_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "endpoint": "/api/v1"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1.json"
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/apis/rbac.authorization.k8s.io/v1/namespaces/{namespace}/roles"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_rbac.authorization.k8s.io_v1_post_success_roles.json"
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/apis/rbac.authorization.k8s.io/v1/namespaces/{namespace}/rolebindings"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_rbac.authorization.k8s.io_v1_post_success_rolebindings.json"
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/apis/apps/v1/namespaces/{namespace}/deployments"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "apis_apps_v1_post_success_deployments.json"
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/api/v1/namespaces/{namespace}/configmaps"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_post_success_configmaps.json"
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/api/v1/namespaces/{namespace}/secrets"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_post_success_secrets.json"
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "endpoint": "/api/v1/namespaces/{namespace}/serviceaccounts"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_post_success_serviceaccounts.json"
+    }
+  },
+  {
+    "request": {
+      "method": "PUT",
+      "endpoint": "/api/v1/namespaces/{namespace}/serviceaccounts/{name}"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "bodyFile": "api_v1_put_success_serviceaccounts.json"
+    }
+  }
+]

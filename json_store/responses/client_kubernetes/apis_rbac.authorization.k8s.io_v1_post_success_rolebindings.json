@@ -1,0 +1,26 @@
+{
+  "apiVersion": "rbac.authorization.k8s.io/v1",
+  "kind": "RoleBinding",
+  "metadata": {
+    "name": "mockagent-3-client-test-helm",
+    "namespace": "default",
+    "labels": {
+      "helm.sh/chart": "client-test-helm-0.1.0",
+      "app.kubernetes.io/name": "client-test-helm",
+      "app.kubernetes.io/instance": "mockagent-3",
+      "app.kubernetes.io/version": "1.16.0",
+      "app.kubernetes.io/managed-by": "Helm"
+    }
+  },
+  "roleRef": {
+    "apiGroup": "rbac.authorization.k8s.io",
+    "kind": "Role",
+    "name": "mockagent-3-client-test-helm"
+  },
+  "subjects": [
+    {
+      "kind": "ServiceAccount",
+      "name": "mockagent-3-client-test-helm"
+    }
+  ]
+}
