@@ -1,0 +1,110 @@
+{
+  "apiVersion": "apps/v1",
+  "kind": "Deployment",
+  "metadata": {
+    "name": "mockagent-3-client-test-helm",
+    "namespace": "default",
+    "labels": {
+      "helm.sh/chart": "client-test-helm-0.1.0",
+      "app.kubernetes.io/name": "client-test-helm",
+      "app.kubernetes.io/instance": "mockagent-3",
+      "app.kubernetes.io/version": "1.16.0",
+      "app.kubernetes.io/managed-by": "Helm"
+    }
+  },
+  "spec": {
+    "replicas": 1,
+    "selector": {
+      "matchLabels": {
+        "app.kubernetes.io/name": "client-test-helm",
+        "app.kubernetes.io/instance": "mockagent-3"
+      }
+    },
+    "template": {
+      "metadata": {
+        "labels": {
+          "app.kubernetes.io/name": "client-test-helm",
+          "app.kubernetes.io/instance": "mockagent-3"
+        }
+      },
+      "spec": {
+        "serviceAccountName": "mockagent-3-client-test-helm",
+        "securityContext": null,
+        "containers": [
+          {
+            "name": "mock-agent",
+            "image": "alpine",
+            "imagePullPolicy": "IfNotPresent",
+            "command": [
+              "/bin/sh"
+            ],
+            "args": [
+              "-c",
+              "apk update && apk add inotify-tools && while true; do inotifywait -e modify $CONFIG_FILE_PATH/$CONFIG_FILE_NAME; cat  $CONFIG_FILE_PATH/$CONFIG_FILE_NAME; done"
+            ],
+            "envFrom": [
+              {
+                "configMapRef": {
+                  "name": "mockagent-3-client-test-helm"
+                }
+              }
+            ],
+            "volumeMounts": [
+              {
+                "name": "fso-agent-management-client-data",
+                "mountPath": "/fso-agent-management-client-data"
+              }
+            ]
+          },
+          {
+            "name": "fso-agent-management-client",
+            "image": "494198612820.dkr.ecr.us-west-2.amazonaws.com/cosmosx/agent-config-client:22.4.0-112",
+            "imagePullPolicy": "IfNotPresent",
+            "env": [
+              {
+                "name": "INSTANCE_UID",
+                "value": "8b82e8ac-bbc0-4d08-9072-962cf5598371"
+              },
+              {
+                "name": "CLUSTER_NAMESPACE",
+                "valueFrom": {
+                  "fieldRef": {
+                    "fieldPath": "metadata.namespace"
+                  }
+                }
+              },
+              {
+                "name": "INSTALLED_TIME",
+                "value": "2023-03-24T12:20:00Z"
+              }
+            ],
+            "envFrom": [
+              {
+                "configMapRef": {
+                  "name": "mockagent-3-client-test-helm"
+                }
+              },
+              {
+                "secretRef": {
+                  "name": "mockagent-3-client-test-helm"
+                }
+              }
+            ],
+            "volumeMounts": [
+              {
+                "name": "fso-agent-management-client-data",
+                "mountPath": "/fso-agent-management-client-data"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "fso-agent-management-client-data",
+            "emptyDir": {}
+          }
+        ]
+      }
+    }
+  }
+}
